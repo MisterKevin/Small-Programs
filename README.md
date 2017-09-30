@@ -15,11 +15,11 @@ One of the obstacles I faced is that while "Puzzle Pirates" gives you a "Preview
 
 For example, in the code you will see this style:
 ```
-<font color="123456" size="X">
-	<font color="098765" size="Y">Some_String</font>
-	String_With_123456_Tag
-	<font color="098765" size="Y">Some_String_2</font>
-	String_With_123456_Tag_2
+<font size="X">
+    <font color="098765" size="Y">String_With_Size_Y</font>
+    Naked_String_With_Size_X
+    <font color="098765" size="Y">String_With_Size_Y_2</font>
+    Naked_String_With_Size_X_2
 </font>.
 ```
 
