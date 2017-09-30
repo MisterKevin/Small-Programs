@@ -11,8 +11,9 @@
 | Base      Invisible Ink         #C7C9B0  |
 ||||||||||||||||||||||||||||||||||||||||||||
 
-Notes regarding strange <font> tag formatting: 
+> Notes regarding strange <font> tag formatting: 
     You may see this syntax in this code: 
+        
         <font color="123456" size="X">
             <font color="098765" size="Y">Some_String</font>
             String_With_123456_Tag
@@ -22,6 +23,7 @@ Notes regarding strange <font> tag formatting:
 
     It's strange because of the one <font> tag encompassing more <font> tags and other naked tags. 
     Another way to do it, which I argue is better style, would be:
+        
         <font color="098765" size="Y">Some_String</font>
         <font color="123456" size="X">String_With_123456_Tag</font>
         <font color="098765" size="Y">Some_String_2</font>
@@ -34,7 +36,7 @@ Notes regarding strange <font> tag formatting:
 
     Truly, though, 80% of the characters here is just HTML code. Sad days.
 
-Notes regarding colors:
+> Notes regarding colors:
     I picked very white-washed colors because of the strange background color choice for the game.
       Using darker and more heavy colors gives off an eerie and unpleasant feeling and, quite upon happenstance,
       I noticed that whiter colors were much more appealing especially when tony-hinted with the slightest of colors.
@@ -46,8 +48,16 @@ Notes regarding colors:
       and ensure that the text is the color of the background. 
 
     One limitation to this is that if a user highlights the text, they'll notice the chosen junk / dummy text used
-    to provide buffer for the aesthetic of C++ code tabbing. Thus, when users highlight the code below, they will
-    see many "_"'s prepending each line. Oh well. They'll just have to deal with it! 
+      to provide buffer for the aesthetic of C++ code tabbing. Thus, when users highlight the code below, they will
+      see many "_"'s prepending each line. Oh well. They'll just have to deal with it! 
+
+> Notes if you want to tweak the code
+    I want to thank Sublime and their many themes/plugins/add-ons that have aided me in defining and tweaking 
+      a great looking syntax coloring-scheme for this. The ideas about which words to color
+      were taken from here. If you want to create your own, simply download Sublime, create a file named "Test.cpp",
+      and begin typing. Sublime should recognize the syntax based on the ".cpp" extension, and will begin highlighting
+      for you. With this knowledge of which words to highlight, change the Color-Role-Value legend at the top of this
+      .cpp file to match your tastes and knock yourself out!
 -->
 
 <!-- CODE BEGIN -->
