@@ -12,27 +12,42 @@
 ||||||||||||||||||||||||||||||||||||||||||||
 
 Notes regarding strange <font> tag formatting: 
-		You may see this syntax in this code: 
-			<font color="123456" size="X">
-				<font color="098765" size="Y">Some_String</font>
-				String_With_123456_Tag
-				<font color="098765" size="Y">Some_String_2</font>
-				String_With_123456_Tag_2
-			</font>.
-
-	   	It's strange because of the one <font> tag encompassing more <font> tags and other naked tags. 
-	   	Another way to do it, which I argue is better style, would be:
+	You may see this syntax in this code: 
+		<font color="123456" size="X">
 			<font color="098765" size="Y">Some_String</font>
-			<font color="123456" size="X">String_With_123456_Tag</font>
+			String_With_123456_Tag
 			<font color="098765" size="Y">Some_String_2</font>
-			<font color="123456" size="X">String_With_123456_Tag_2</font>
-	 
-	   	That way is cleaner as you know for sure what string is with what <font> tag. 
-	   	However, as I found out the hard way, YPP has a limit to 3,000 characters for Officer Bulletin Boards for Ships.
-	   	This means I needed to shorten the code as much as possible. Thus, I decided to encapsulate <font> tags and
-	   	  layer them together such that, in the end, the character count is much less than it would be.
+			String_With_123456_Tag_2
+		</font>.
 
-	    Truly, thoguh, 80% of the characters here is just HTML code. Sad days.
+   	It's strange because of the one <font> tag encompassing more <font> tags and other naked tags. 
+   	Another way to do it, which I argue is better style, would be:
+		<font color="098765" size="Y">Some_String</font>
+		<font color="123456" size="X">String_With_123456_Tag</font>
+		<font color="098765" size="Y">Some_String_2</font>
+		<font color="123456" size="X">String_With_123456_Tag_2</font>
+ 
+   	That way is cleaner as you know for sure what string is with what <font> tag. However, as I found out the hard way, 
+   	  YPP has a limit to 3,000 characters for Officer Bulletin Boards for Ships. This means I needed to shorten the code
+   	  as much as possible. Thus, I decided to encapsulate <font> tags and layer them together such that, in the end,
+   	  the character count is much less than it would be.
+
+    Truly, though, 80% of the characters here is just HTML code. Sad days.
+
+Notes regarding colors:
+	I picked very white-washed colors because of the strange background color choice for the game.
+	  Using darker and more heavy colors gives off an eerie and unpleasant feeling and, quite upon happenstance,
+	  I noticed that whiter colors were much more appealing especially when tony-hinted with the slightest of colors.
+
+	Note that the color "Base" may look strange, however it is the exact or near-exact hex color configuration that
+	  Puzzle Pirates uses for their background. The game, unfortunately, does not allow prepended whitespace to their
+	  strings. Meaning, you cannot write: "       Hello!" onto a line. It gets truncated to just "Hello!". Thus, one
+	  way to get around that is to add text before each line (Courier is a mono-spaced font, thus any character should work)
+	  and ensure that the text is the color of the background. 
+
+	One limitation to this is that if a user highlights the text, they'll notice the chosen junk / dummy text used
+	to provide buffer for the aesthetic of C++ code tabbing. Thus, when users highlight the code below, they will
+	see many "_"'s prepending each line. Oh well. They'll just have to deal with it! 
 -->
 
 <font face="Courier" size="6"><b>
