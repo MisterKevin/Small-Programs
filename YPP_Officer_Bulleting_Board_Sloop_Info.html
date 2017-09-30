@@ -1,0 +1,59 @@
+<!--
+||||||||||||||||||||||||||||||||||||||||||||
+| Color     Role	  		      Value    |
+| -----------------------------------------|
+| Cyan 	    Syntax Id 	  	      #B7FFFC  |
+| Green     Class Names	          #ABFFA3  |
+| Pink	    I/O && Accents        #FFA0C0  |
+| Orange    Comments              #FFE0AA  |
+| Grey      Cout && Statements    #7A7A7A  |
+| White     Operators             #F9F6EF  |
+| Base      Invisible Ink         #C7C9B0  |
+||||||||||||||||||||||||||||||||||||||||||||
+
+Notes regarding strange <font> tag formatting: 
+		You may see this syntax in this code: 
+			<font color="123456" size="X">
+				<font color="098765" size="Y">Some_String</font>
+				String_With_123456_Tag
+				<font color="098765" size="Y">Some_String_2</font>
+				String_With_123456_Tag_2
+			</font>.
+
+	   	It's strange because of the one <font> tag encompassing more <font> tags and other naked tags. 
+	   	Another way to do it, which I argue is better style, would be:
+			<font color="098765" size="Y">Some_String</font>
+			<font color="123456" size="X">String_With_123456_Tag</font>
+			<font color="098765" size="Y">Some_String_2</font>
+			<font color="123456" size="X">String_With_123456_Tag_2</font>
+	 
+	   	That way is cleaner as you know for sure what string is with what <font> tag. 
+	   	However, as I found out the hard way, YPP has a limit to 3,000 characters for Officer Bulletin Boards for Ships.
+	   	This means I needed to shorten the code as much as possible. Thus, I decided to encapsulate <font> tags and
+	   	  layer them together such that, in the end, the character count is much less than it would be.
+
+	    Truly, thoguh, 80% of the characters here is just HTML code. Sad days.
+-->
+
+<font face="Courier" size="6"><b>
+<font color="#ABFFA3" size="7"><font color="#B7FFFC" size="6"><i>void</i> </font>Kevly<font color="#F9F6EF" size="6">::</font>Ships<font color="#F9F6EF" size="6">::</font>Sloop<font color="#F9F6EF" size="6">()</font></font>
+<font color="#F9F6EF">{</font>
+<font color="#C7C9B0">____</font><font color="#FFE0AA">// General Introduction</font>
+<font color="#7A7A7A"><font color="#C7C9B0">____</font>cout <font color="#FFA0C0"><<</font> <font color="#7A7A7A">"Ahoy! Welcome to <font color="#FFA0C0">Kevly's Sloop</font>!"</font>;</font>
+<font color="#7A7A7A"><font color="#C7C9B0">_________</font><font color="#FFA0C0"><<</font> "Here are things you should know before sailing this Sloop.";</font>
+
+<font color="#C7C9B0">____</font><font color="#FFE0AA">// Declare Local Sloop Variables</font>
+<font color="#7A7A7A"><font color="#C7C9B0">____</font><i><font color="#FFA0C0">const</font> <font color="#B7FFFC">string</font></i> ship_name <font color="#FFA0C0">=</font> "Creative Marlin"<font color="#7A7A7A">;</font></font>
+<font color="#7A7A7A"><font color="#C7C9B0">____</font><i><font color="#FFA0C0">const</font> <font color="#B7FFFC">string</font></i> date_of_birth <font color="#FFA0C0">=</font> "09/30/2017"<font color="#7A7A7A">;</font></font>
+<font color="#7A7A7A"><font color="#C7C9B0">____</font><i><font color="#FFA0C0">const</font> <font color="#B7FFFC">string</font></i> home_island <font color="#FFA0C0">=</font> "Port Venture"<font color="#7A7A7A">;</font> <font color="#C7C9B0">_______</font><font color="#FFE0AA">// Please return the ship here after pillying!</font></font>
+<font color="#7A7A7A"><font color="#C7C9B0">____</font><i><font color="#FFA0C0">const</font> <font color="#B7FFFC">int</font></i> fine_rum_amount_before_sail <font color="#FFA0C0">=</font> 30<font color="#7A7A7A">;</font> <font color="#C7C9B0">______</font><font color="#FFE0AA">// Enough for ~6 battles</font></font>
+<font color="#7A7A7A"><font color="#C7C9B0">____</font><i><font color="#FFA0C0">const</font> <font color="#B7FFFC">int</font></i> small_cannonball_amt_before_sail <font color="#FFA0C0">=</font> 125<font color="#7A7A7A">;</font> <font color="#FFE0AA">// Enough for ~6 battles</font></font>
+
+<font color="#C7C9B0">____</font><font color="#FFE0AA">// Closings</font>
+<font color="#7A7A7A"><font color="#C7C9B0">____</font>cout <font color="#FFA0C0"><<</font> "Please <font color="#FFA0C0">restock</font> the ship once finished! The next sailor will greatly appreciate it.";</font>
+<font color="#7A7A7A"><font color="#C7C9B0">____</font>cout <font color="#FFA0C0"><<</font> "Heartily <font color="#FFA0C0">greet</font> new pirates and make them feel welcome! This Sloop is meant for the new and the old.";</font>
+<font color="#7A7A7A"><font color="#C7C9B0">_________</font><font color="#FFA0C0"><<</font> "And as always: Stay Kevly!";
+
+<font color="#C7C9B0">____</font><font color="#FFA0C0">return</font><font color="#7A7A7A">;</font>
+<font color="#F9F6EF">}</font>
+</b></font>
