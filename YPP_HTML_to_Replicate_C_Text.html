@@ -1,19 +1,12 @@
-<!--
-Original Creator: Kevin Lee 
+<!-- // Introduction
+Original Creator: Kevin Lee
 Original Date: October, 2017
+Info: Puzzle Pirates is a game that accepts HTML <font> tag text modifiers in order to customize certain text.
+  Below is a customization that mimics a little C++ function that uses Sublime-like syntax highlighting. All
+  colors and code is created by myself, however I would like to give credit for the syntax highlighting to Sublime.
+-->
 
-||||||||||||||||||||||||||||||||||||||||||||
-| Color     Role                  Value    |
-| -----------------------------------------|
-| Cyan      Syntax Id             #B7FFFC  |
-| Green     Class Names           #ABFFA3  |
-| Pink      I/O && Accents        #FFA0C0  |
-| Orange    Comments              #FFE0AA  |
-| Grey      Cout && Statements    #7A7A7A  |
-| White     Operators             #F9F6EF  |
-| Base      Invisible Ink         #C7C9B0  |
-||||||||||||||||||||||||||||||||||||||||||||
-
+<!-- // General Info
 > Notes regarding strange <font> tag formatting: 
     You may see this syntax in this code: 
         
@@ -31,7 +24,7 @@ Original Date: October, 2017
         <font color="123456" size="X">String_With_123456_Tag</font>
         <font color="098765" size="Y">Some_String_2</font>
         <font color="123456" size="X">String_With_123456_Tag_2</font>
- 
+
     That way is cleaner as you know for sure what string is with what <font> tag. However, as I found out the hard way, 
       YPP has a limit to 3,000 characters for Officer Bulletin Boards for Ships. This means I needed to shorten the code
       as much as possible. Thus, I decided to encapsulate <font> tags and layer them together such that, in the end,
@@ -63,6 +56,23 @@ Original Date: October, 2017
       .cpp file to match your tastes and knock yourself out!
 -->
 
+
+<!-- 
+
+** Sloop Officer Bulletin Board **
+
+||||||||||||||||||||||||||||||||||||||||||||
+| Color     Role                  Value    |
+| -----------------------------------------|
+| Cyan      Syntax Id             #B7FFFC  |
+| Green     Class Names           #ABFFA3  |
+| Pink      I/O && Accents        #FFA0C0  |
+| Orange    Comments              #FFE0AA  |
+| Grey      Cout && Statements    #7A7A7A  |
+| White     Operators             #F9F6EF  |
+| Base      Invisible Ink         #C7C9B0  |
+||||||||||||||||||||||||||||||||||||||||||||
+
 <!-- CODE BEGIN -->
 <font face="Courier" size="6"><b>
 <font color="#ABFFA3" size="7"><font color="#B7FFFC" size="6"><i>void</i> </font>Kevly<font color="#F9F6EF" size="6">::</font>Ships<font color="#F9F6EF" size="6">::</font>Sloop<font color="#F9F6EF" size="6">()</font></font>
@@ -78,10 +88,51 @@ Original Date: October, 2017
 <font color="#7A7A7A"><font color="#C7C9B0">____</font><i><font color="#FFA0C0">const</font> <font color="#B7FFFC">int</font></i> fine_rum_amount_before_sail <font color="#FFA0C0">=</font> 50<font color="#7A7A7A">;</font> <font color="#C7C9B0">______</font><font color="#FFE0AA">// Enough for ~12 battles</font></font>
 <font color="#7A7A7A"><font color="#C7C9B0">____</font><i><font color="#FFA0C0">const</font> <font color="#B7FFFC">int</font></i> small_cannonball_amt_before_sail <font color="#FFA0C0">=</font> 200<font color="#7A7A7A">;</font> <font color="#FFE0AA">// Enough for ~12 battles</font></font>
 
-<font color="#C7C9B0">____</font><font color="#FFE0AA">// Closings</font>
+<font color="#C7C9B0">____</font><font color="#FFE0AA">// Closing Statements</font>
 <font color="#7A7A7A"><font color="#C7C9B0">____</font>cout <font color="#FFA0C0"><<</font> "Please <font color="#FFA0C0">restock</font> the ship once finished! The next sailor will greatly appreciate it.";</font>
 <font color="#7A7A7A"><font color="#C7C9B0">____</font>cout <font color="#FFA0C0"><<</font> "Heartily <font color="#FFA0C0">greet</font> new pirates and make them feel welcome! This Sloop is meant for the new and the old.";</font>
-<font color="#7A7A7A"><font color="#C7C9B0">_________</font><font color="#FFA0C0"><<</font> "And as always: Stay Kevly!";
+<font color="#7A7A7A"><font color="#C7C9B0">_________</font><font color="#FFA0C0"><<</font> "And, as always: Stay Kevly!";
+
+<font color="#C7C9B0">____</font><font color="#FFA0C0">return</font><font color="#7A7A7A">;</font>
+<font color="#F9F6EF">}</font>
+</b></font>
+<!-- CODE END -->
+
+<!--
+
+** For Iron Mongers Stall **
+
+||||||||||||||||||||||||||||||||||||||||||||
+| Color     Role                  Value    |
+| -----------------------------------------|
+| Cyan      Syntax Id             #B7FFFC  |
+| Green     Class Names           #ABFFA3  |
+| Pink      I/O && Accents        #FFA0C0  |
+| Orange    Comments              #FFE0AA  |
+| Grey      Cout && Statements    #7A7A7A  |
+| White     Operators             #F9F6EF  |
+| Base      Invisible Ink         #C7C9B0  |
+||||||||||||||||||||||||||||||||||||||||||||
+
+<!-- CODE BEGIN -->
+<font face="Courier" size="6"><b>
+<font color="#ABFFA3" size="7"><font color="#B7FFFC" size="6"><i>void</i> </font>Kevly<font color="#F9F6EF" size="6">::</font>Stalls<font color="#F9F6EF" size="6">::</font>Iron_Monger<font color="#F9F6EF" size="6">()</font></font>
+<font color="#F9F6EF">{</font>
+<font color="#C7C9B0">____</font><font color="#FFE0AA">// General Introduction</font>
+<font color="#7A7A7A"><font color="#C7C9B0">____</font>cout <font color="#FFA0C0"><<</font> <font color="#7A7A7A">"Ahoy! Welcome to <font color="#FFA0C0">Kevly's Iron Monger Stall</font>! "</font>;</font>
+<font color="#7A7A7A"><font color="#C7C9B0">_________</font><font color="#FFA0C0"><<</font> "I'm truly glad you're here. Here are some things to know!";</font>
+
+<font color="#C7C9B0">____</font><font color="#FFE0AA">// Declare Local Stall Variables</font>
+<font color="#7A7A7A"><font color="#C7C9B0">____</font><i><font color="#FFA0C0">const</font> <font color="#B7FFFC">string</font></i> stall_name <font color="#FFA0C0">=</font> "Kevly's Ironworking Stall"<font color="#7A7A7A">;</font></font>
+<font color="#7A7A7A"><font color="#C7C9B0">____</font><i><font color="#FFA0C0">const</font> <font color="#B7FFFC">string</font></i> date_of_birth <font color="#FFA0C0">=</font> "10/08/2017"<font color="#7A7A7A">;</font></font>
+<font color="#7A7A7A"><font color="#C7C9B0">____</font><i><font color="#FFA0C0">const</font> <font color="#B7FFFC">string</font></i> home_island <font color="#FFA0C0">=</font> "Port Venture"<font color="#7A7A7A">;</font>
+<font color="#7A7A7A"><font color="#C7C9B0">____</font><i><font color="#FFA0C0">const</font> <font color="#B7FFFC">string</font></i> main_manager <font color="#FFA0C0">=</font> "Shackleton"<font color="#7A7A7A">;</font> <font color="#FFE0AA">// Message this lad or myself for special requests!</font></font>
+<font color="#7A7A7A"><font color="#C7C9B0">____</font><i><font color="#FFA0C0">const</font> <font color="#B7FFFC">bool</font></i> is_great_pay <font color="#FFA0C0">=</font> true<font color="#7A7A7A">;</font> <font color="#C7C9B0">__________</font><font color="#FFE0AA">// Top PoE for your work!</font></font>
+
+<font color="#C7C9B0">____</font><font color="#FFE0AA">// Closing Statements</font>
+<font color="#7A7A7A"><font color="#C7C9B0">____</font>cout <font color="#FFA0C0"><<</font> "I truly hope you <font color="#FFA0C0">love</font> working here. Your employment and loyalty mean so much to me and to my managers!";</font>
+<font color="#7A7A7A"><font color="#C7C9B0">____</font>cout <font color="#FFA0C0"><<</font> "Should you have any concern, please feel free to contact me at <font color="#FFA0C0">1-800-KevlyInc</font>.</font>
+<font color="#7A7A7A"><font color="#C7C9B0">_________</font><font color="#FFA0C0"><<</font> "And, as always: Stay Kevly!";
 
 <font color="#C7C9B0">____</font><font color="#FFA0C0">return</font><font color="#7A7A7A">;</font>
 <font color="#F9F6EF">}</font>
