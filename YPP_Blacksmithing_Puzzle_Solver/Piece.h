@@ -9,8 +9,8 @@
 // Row = 0 and Col = 0 represents top-left of board.
 struct Board_Coordinates
 {
-	int row;
-	int col;
+	int x;
+	int y;
 	bool in_bounds(); // Determines if board_coordinates is within board bounds
 };
 
@@ -28,6 +28,14 @@ public:
 	virtual std::vector<Board_Coordinates> move(const Board_Coordinates& curr_position) = 0;
 };
 
+/***** Empty Piece Class *****/
+// This class represents the empty piece, meaning that this piece does not exist in the board.
+class Empty : public Piece
+{
+public:
+	// Returns empty vector
+	virtual std::vector<Board_Coordinates> move(const Board_Coordinates& curr_position) override;
+};
 
 /***** Number Piece Class *****/
 // This class represents the Pieces of `One`, `Two`, `Three`, and `Four` in the puzzle.
@@ -56,10 +64,18 @@ public:
 	virtual std::vector<Board_Coordinates> move(const Board_Coordinates& curr_position) override;
 };
 
+/***** Edge_Pieces Piece Class *****/
+// This class represents pieces whose moves go to the edges.
+class Edge_Pieces : public Piece 
+{
+public:
+	std::vector<Board_Coordinates> horiz_vert_edge_move(const Board_Coordinates& curr_position);
+	std::vector<Board_Coordinates> diagonal_edge_move(const Board_Coordinates& curr_position);
+};
 
 /***** Rook Piece Class *****/
 // This class represents the `Rook` piece in the puzzle.
-class Rook : public Piece
+class Rook : public Edge_Pieces
 {
 public:
 	// Moves in straight lines to the sides of the board.
@@ -69,7 +85,7 @@ public:
 
 /***** Bishop Piece Class *****/
 // This class represents the `Bishop` piece in the puzzle.
-class Bishop : public Piece
+class Bishop : public Edge_Pieces
 {
 public:
 	// Moves in diagonal lines to the sides of the board.
@@ -79,7 +95,8 @@ public:
 
 /***** Queen Piece Class *****/
 // This class represents the `Queen` piece in the puzzle.
-class Queen : public Piece
+// Inheriting from Rook and Bishop to use their own move() functions
+class Queen : public Edge_Pieces
 {
 public:
 	// Moves in diagonal and straight lines to the sides of the board.
