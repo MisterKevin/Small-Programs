@@ -1,19 +1,10 @@
 #ifndef PIECE_H
 #define PIECE_H
 
+#include "Board_Coordinates.h"
 #include <vector>
 #include <string>
-
-/***** Board_Coordinates Class *****/
-// Simple class to represent board Board_Coordinates.
-// Row = 0 and Col = 0 represents top-left of board.
-struct Board_Coordinates
-{
-	int x;
-	int y;
-	bool in_bounds(); // Determines if board_coordinates is within board bounds
-};
-
+#include <iostream>
 
 /***** Piece Class *****/
 // The Piece class is pure virtual with this header file containing all possible pieces
@@ -45,7 +36,7 @@ class Number : public Piece
 public:
 	// Constructor takes in paramter to determine the piece's number.
 	// Called from Piece_Factory.h with the name given to factory
-	Number(std::string name);
+	Number(char name);
 
 	// Moves depending on private move_number var
 	virtual std::vector<Board_Coordinates> move(const Board_Coordinates& curr_position) override;

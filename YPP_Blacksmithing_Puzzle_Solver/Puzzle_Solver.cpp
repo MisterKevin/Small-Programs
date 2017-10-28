@@ -10,7 +10,7 @@ int main()
 	try
 	{
 		b.read("puzzle_solver_input.txt");
-		b.solve();
+		b.solve_kickstarter();
 		b.write("puzzle_solver_output.txt");
 	}
 	catch (Error& e)
